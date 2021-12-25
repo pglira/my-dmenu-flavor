@@ -11,10 +11,12 @@ static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { "#ffffff", "#444444" },
 	[SchemeSel] = { "#ffffff", "#0087ff" },
-	[SchemeOut] = { "#000000", "#00ffff" },
+	[SchemeOut] = { "#444444", "#00ffff" },
+	[SchemeSelHighlight] = { "#ffffff", "#ff0000" },
+	[SchemeNormHighlight] = { "#ffffff", "#ff0000" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
-static unsigned int lines      = 20;
+static unsigned int lines      = 25;
 
 /*
  * Characters not considered part of a word while deleting words
@@ -26,4 +28,4 @@ static const char worddelimiters[] = " ";
 static const unsigned int border_width = 5;
 
 /* Width of window */
-static const unsigned int window_width = 1000;
+static const unsigned int window_width = 1250;
