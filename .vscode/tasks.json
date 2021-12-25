@@ -6,7 +6,7 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "make clean",
+            "command": "make clean && make",
             "problemMatcher": []
         }
     ]
